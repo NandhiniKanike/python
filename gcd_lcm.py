@@ -1,0 +1,5 @@
+gcd=lambda n1,n2:n1 if n2==0 else gcd(n2,n1%n2)
+n1=int(input("ENTER THE FIRST NUMBER :"))
+n2=int(input("ENTER THE SECOND  NUMBER :"))
+print(f"GCD OF {n1} AND {n2} =",gcd(n1,n2))
+print(f'LCM OF {n1} AND {n2} =',n1*n2//gcd(n1,n2))
